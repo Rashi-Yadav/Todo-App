@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container"> 
+       <h1>Todo App</h1>
+        <div class="input">
+            <form action="#" class="row" id="form">
+                <div class="col">
+                    <div class="form-floating">
+                        <label for="todo-name">Todo Name</label>
+                        <input type="text" class="form-control" id="todo-name" placeholder="Items">
+                    </div>
+                </div>
+                <br>
+                <div class="col">
+                    <div class="form-floating">
+                        <label for="todo-description">Todo Description</label>
+                        <input type="text" class="form-control" id="todo-description" placeholder="description....">
+                    </div>
+                </div>
+                <br>
+                <div class="text-end">
+                    <button type="submit" class="change-btn">Add Todo</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="row">
+            <div class="todo-remaining">
+                <h3>Todo Remaining</h3>
+                <ul class="todo-remaining-ul"></ul>
+            </div>
+
+            <div class="todo-done">
+                <h3>Todo Done</h3>
+                <ul class="todo-done-ul"></ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+<script src="script.js"></script>
+
+</html>
